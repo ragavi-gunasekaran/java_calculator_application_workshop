@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class SwingCalculator {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         JFrame frame = new JFrame("Advanced Calculator");
 
