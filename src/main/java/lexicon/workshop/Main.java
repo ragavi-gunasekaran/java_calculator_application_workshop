@@ -15,24 +15,24 @@ public class Main {
         IO.print("Enter Input number 2 : ");
         int number2 = scan.nextInt();
         menu();
-        int input = scan.nextInt();
+        char input = scan.next().charAt(0);
         boolean choice = true;
 
         while (choice) {
             switch (input) {
-                case 1:
+                case '+':
                     IO.println("In Addition");
                     IO.println("Addition of " + number1 + " and " + number2 + " is " + (number1 + number2));
                     break;
-                case 2:
+                case '-':
                     IO.println("In Subtraction");
                     IO.println("Subtraction of " + number1 + " and " + number2 + " is " + (number1 - number2));
                     break;
-                case 3:
+                case '*':
                     IO.println("In Multiplication");
                     IO.println("Multiplication of " + number1 + " and " + number2 + " is " + (number1 * number2));
                     break;
-                case 4:
+                case '/':
                     IO.println("In Division");
                     if (number2 != 0) {
                         double div = number1 / number2;
@@ -42,7 +42,7 @@ public class Main {
                     }
                     break;
                 default:
-                    IO.println("Wrong option entered. Please enter the option number from 1 to 4 to perform Arithmetic operation");
+                    IO.println("Wrong option entered. Please enter any one of the operators (+,-,*,/) to perform Arithmetic operation");
                     break;
 
             }
@@ -55,7 +55,7 @@ public class Main {
                 IO.print("Enter Input number 2 : ");
                 number2 = scan.nextInt();
                 menu();
-                input = scan.nextInt();
+                input = scan.next().charAt(0);
                 choice = true;
             } else {
                 choice = false;
@@ -65,12 +65,11 @@ public class Main {
     }
 
     static void menu() {
-        IO.println("Please select the below choice of operation which you want to perform for your input entered.");
-        IO.println("1. Addition");
-        IO.println("2. Subtraction");
-        IO.println("3. Multiplication");
-        IO.println("4. Division");
-        IO.println("0. Exit the app");
+        IO.println("Please select the below choice of operation(+,-,*,/) which you want to perform for your input entered.");
+        IO.println("+ Addition");
+        IO.println("- Subtraction");
+        IO.println("* Multiplication");
+        IO.println("/ Division");
     }
 }
 
