@@ -38,7 +38,7 @@ public class Main {
                         double div = number1 / number2;
                         IO.println("Division of " + number1 + " and " + number2 + " is " + div);
                     } else {
-                        System.out.println("Error: Division by zero is not allowed.");
+                        System.out.println("Division by zero is not allowed.");
                     }
                     break;
                 default:
